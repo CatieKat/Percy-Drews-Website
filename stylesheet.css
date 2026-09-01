@@ -1,0 +1,326 @@
+/* font */
+@font-face {
+    font-family: 'WrestleFont';
+    src: url('WrestleFont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'WrestleFont';
+}
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+
+/* background */
+body {
+  font-family: 'WrestleFont', Arial, sans-serif;
+  background-color: #000000;
+  color: #000000; /* yellow color */
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.titleandtiger {
+  position: relative;
+  width: 500px;
+  margin: 100px auto;
+}
+
+.tigerImage {
+  width: 500px;
+  height: 500px;
+  display: block;
+  position: relative;
+  top: -130px;
+}
+
+.leftPaw {
+  width: 500px;
+  height: 500px;
+  display: block;
+  position: relative;
+  top: 10%;
+  left: 0%;
+  transform: translate(-23%, -150%);
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.rightPaw {
+  width: 500px;
+  height: 500px;
+  display: block;
+  position: relative;
+  top: 10%;
+  left: 0%;
+  transform: translate(20%, -250%);
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-25%, -1563%);
+  white-space: nowrap;
+  font-size: 60px;
+  background-color: #000000;
+  color: #d60f0f; /* change to #ffffff for white */
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.undertitle {
+  position: absolute;
+  top: 53%;
+  left: 0%;
+  transform: translate(-5%, -1700%);
+  white-space: nowrap;
+  font-size: 40px;
+  line-height: 1.6;
+  color: #ffffff; /* white body text */
+  text-align: center;
+}
+
+
+
+.app {
+  display: flex;
+  min-height: auto;
+}
+
+.menu-toggle {
+  display: block;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 99px;
+  background-color: #d62323;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hamburger {
+  width: 40px;
+  height: 50px;
+  transform: translate(25%, 55%);
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color:#ffffff;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+
+.hamburger > span::after {
+  content:'';
+  top: 8px;
+}
+
+/*-- animation for hamburger button -->*/
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar {
+  flex: 1 1 0;
+  max-width: 300px;
+  padding: 2rem 1rem;
+  background-color:#282525;
+}
+
+.sidebar h3{
+  color: #d01010;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .menu {
+  margin: 0 -1rem;
+}
+
+.sidebar .menu .menu-item {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.is-active {
+  color:#d01010;
+  border-right: 5px solid #888;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 2rem;
+  overflow: visible;
+}
+
+.sidebar .content h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .content p {
+  color:#888;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: block;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100vh;
+    transition: 0.2s linear;
+  }
+
+  .sidebar.is-active {
+    left: 0;
+  }
+}
+
+.icons {
+  position: fixed;
+  bottom: 20px; /* Distance from bottom */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fb {
+    color:#c50808;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.fb:hover {
+    color:azure;
+}
+
+.x {
+    color:#c50808;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.x:hover {
+    color:azure;
+}
+
+.insta {
+    color:#c50808;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.insta:hover {
+    color:azure;
+}
+
+
+.icons {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.bio_text {
+  position: absolute;
+  top: 53%;
+  left: -60%;
+  transform: translate(45%, -220%);
+  font-size: 25px;
+  line-height: 1.6;
+  color: #ffffff; /* white body text */
+  text-align: center;
+}
+
+.pfp {
+  width: 400px;
+  position: relative;
+  top: 10%;
+  left: 0%;
+  transform: translate(-75%, -270%);
+}
+
+.calendar {
+    position: relative;
+    z-index: 1; /* lower than icons */
+    transform: translate(-10%, -130%);
+    margin-bottom: 20px; /* IMPORTANT */
+}
+
+.calendar_text {
+  position: absolute;
+  top: 53%;
+  left: 0%;
+  white-space: nowrap;
+  transform: translate(-10%, -550%);
+  font-size: 45px;
+  line-height: 1.6;
+  color: #aa1212; 
+  text-align: center;
+}
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Percy Drews</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+
+  <body>
+
+    <div class="icons">
+    <a class="fb" href="https://www.facebook.com/share/19JDLsffUM/?mibextid=wwXIfr" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a class="x" href="https://x.com/percydrews?s=21" target="_blank">
+        <ion-icon name="logo-x"></ion-icon>
+    </a>
+    <a class="insta" href="https://www.instagram.com/iampercydrews/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+    </div>
+
+  <div class="app">
+
+    <div class="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Menu</h3>
+
+      <nav class="menu">
+        <a href="#" class="menu-item is-active">About/Schedule</a>
+        <a href="gallery.html" class="menu-item">Gallery</a>
+        <a href="links.html" class="menu-item">Links/Contact</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+
+      <div class="titleandtiger">
+        <img
+        src="tigerface.png" 
+        class="tigerImage"
+        alt="tigerImage"
+        >
+
+        <img
+        src="pawl.png" 
+        class="leftPaw"
+        alt="leftPaw"
+        >
+
+        <img
+        src="pawr.png" 
+        class="rightPaw"
+        alt="rightPaw"
+        >
+
+        <img 
+        src="pfp.jpg" 
+        class="pfp"
+        alt="pfp"
+        >
+
+        <h1 class="title">The Tiger Prince: Percy Drews</h1>
+        <p class="undertitle">Leader of the Tragedy Boiz</p>
+        <p class="bio_text">Meet “The Hawt Playboy” Percy Drews, a Dayton based professional wrestler known for his electric charisma, fearless athleticism, and crowd melting swagger. Whether he's tearing it up in the ring or stepping into character such as Sanji at GalaxyCon, Percy brings the same fire: confidence, charm, and a performance style that hits with the precision of a tiger ready to pounce. A rising force in independent wrestling, Percy Drews is built for bright lights, loud crowds, and unforgettable moments.</p>
+        <p class="calendar_text">View my schedule below!</p>
+
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&title=Events&src=cGVyY3lkcmV3czE2QGdtYWlsLmNvbQ&color=%23ad1457" 
+          class="calendar"style="border:solid 1px #777" width="600px" height="600px" frameborder="0" scrolling="no"></iframe>
+
+        </div>
+
+
+
+
+    </main>
+
+  </div>
+
+
+
+
+  <!--click on hamburger button-->
+  <script>
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    menu_toggle.addEventListener('click', () => {
+      menu_toggle.classList.toggle('is-active');
+      sidebar.classList.toggle('is-active');
+    });
+  </script>
+
+</body>
+</html>
