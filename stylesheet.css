@@ -374,8 +374,10 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(-25%, -135%);
+        transform: translate(-25%, -140%);
         margin: 10px auto;
+        opacity: 0.6;
+
     }
 
     .rightPaw {
@@ -384,8 +386,10 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(0%, -240%);
+        transform: translate(0%, -245%);
         margin: 10px auto;
+        opacity: 0.6;
+
     }
     
     
