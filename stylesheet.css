@@ -14,13 +14,14 @@
 html, body {
   height: auto;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* background */
 body {
   font-family: 'WrestleFont', Arial, sans-serif;
   background-color: #000000;
-  color: #000000; /* yellow color */
+  color: #000000; 
   margin: 0;
   padding: 0;
   overflow-y: auto;
@@ -306,9 +307,9 @@ body {
 
 .calendar {
     position: relative;
-    z-index: 1; /* lower than icons */
+    z-index: 1; 
     transform: translate(-10%, -130%);
-    margin-bottom: 20px; /* IMPORTANT */
+    margin-bottom: 20px; 
 }
 
 .calendar_text {
@@ -321,6 +322,142 @@ body {
   line-height: 1.6;
   color: #aa1212; 
   text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    .sidebar {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        height: 100vh;
+        transition: 0.2s linear;
+        max-width: 250px;
+        z-index: 9998;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .sidebar.is-active {
+        width: 50%;
+        left: 0;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .tigerImage {
+        width: 70%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-10%, -15%);
+        margin: 10px auto;
+    }
+
+    .leftPaw {
+        width: 70%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-25%, -130%);
+        margin: 10px auto;
+    }
+
+    .rightPaw {
+        width: 70%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -235%);
+        margin: 10px auto;
+    }
+    
+    
+    .pfp {
+        width: 80%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -160%);
+        margin: 10px auto;
+    }
+
+    .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-8%, -1590%);
+        font-size: 35px;
+        text-align: center;
+        margin: 10px auto;
+        white-space: normal; 
+    }
+
+    .undertitle {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-9%, -3250%);
+        font-size: 25px;
+        margin: 10px auto;
+        white-space: normal;
+    }
+
+
+  .bio_text {
+        max-width: 70%;
+        margin: 0 auto;
+        font-size: 15px;
+        white-space: normal;
+        display: block;
+        transform: none;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(-12%, -250%);
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .calendar_text {
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 25px;
+        white-space: normal;
+        display: block;
+        transform: none;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(-12%, -2000%);
+        text-align: center;
+        line-height: 1.5;
+        z-index: 100;
+    }
+    .calendar {
+      width: 75%;
+        position: relative;
+        z-index: 1; 
+        transform: translate(5%, -110%);
+        margin-bottom: 20px; 
+    }
 }
 
 
