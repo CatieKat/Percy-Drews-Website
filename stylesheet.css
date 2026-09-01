@@ -374,9 +374,9 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(-25%, -145%);
+        transform: translate(-25%, -140%);
         margin: 10px auto;
-        opacity: 0.5;
+        opacity: 0.8;
 
     }
 
@@ -386,9 +386,9 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(0%, -250%);
+        transform: translate(0%, -245%);
         margin: 10px auto;
-        opacity: 0.5;
+        opacity: 0.8;
 
     }
     
