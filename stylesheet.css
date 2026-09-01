@@ -374,7 +374,7 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(-25%, -130%);
+        transform: translate(-25%, -135%);
         margin: 10px auto;
     }
 
@@ -384,7 +384,7 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(0%, -235%);
+        transform: translate(0%, -240%);
         margin: 10px auto;
     }
     
