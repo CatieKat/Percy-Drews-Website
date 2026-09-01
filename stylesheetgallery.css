@@ -26,6 +26,11 @@ body {
     overflow-y: auto;
 }
 
+.gallery {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
 .gallery-wrapper {
     display: flex;
     justify-content: center;
